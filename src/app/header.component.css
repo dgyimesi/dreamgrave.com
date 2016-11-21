@@ -1,0 +1,72 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    text-transform: uppercase;
+}
+
+:host > [route] {
+    align-items: center;
+    margin-left: 50px;
+    min-width: 20%;
+}
+
+:host > [social] {
+    margin-right: 50px;
+    min-width: 20%;
+}
+
+:host > [social] > a {
+    margin: 0 0 0 15px;
+    /*border: 1px solid white;
+    height: 20px;
+    align-self: center;
+    padding: 2px;
+    border-radius: 2px;
+    background: white*/
+}
+
+/*:host > [social] > a > img {
+    filter: invert(75%);
+}*/
+
+:host > [options] {
+    justify-content: center;
+    align-self: center;
+    border-bottom: 2px solid #24232f;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+:host > [options].show {
+    opacity: 1;
+}
+
+:host > [options] a {
+    top: 1.5px;
+    margin: 0;
+    border-bottom: 2px solid #24232f;
+    font-size: 11px;
+}
+
+:host > [options] a:not(:last-child) {
+    margin-right: 20px;
+}
+
+:host > [options] a:not(:first-child) {
+    margin-left: 20px;
+}
+
+:host > [options] a:hover {
+    color: white;
+}
+
+:host > [options] a.active {
+    color: white;
+    border-color: white;
+}
+
+:host > [social] {
+    justify-content: flex-end;
+}

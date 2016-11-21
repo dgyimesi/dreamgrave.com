@@ -1,0 +1,192 @@
+:host {
+    width: 100%;
+    justify-content: flex-start !important;
+}
+
+:host > div {
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+}
+
+:host > div > [selector] {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin: 8px 0 0 50px;
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-self: center;
+}
+
+:host > div > [selector] > a {
+    font-family: 'bebas';
+    font-size: 17px;
+    line-height: 24px;
+    transition: color 0.5s;
+}
+
+:host > div > [selector] > a.filtered {
+    color: #423F63;
+    cursor: default;
+    pointer-events: none;
+}
+
+:host > div > [selector] > a > [name] {
+    transition: max-width 0.25s;
+    max-width: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+:host > div > [selector] > a:hover > [name] {
+    max-width: 300px;
+}
+
+:host > div > [selector] > a.active {
+    opacity: 1;
+}
+
+/* TODO: planes are common translater elements, refactor other page components to use it */
+:host > div > [plane] {
+    flex-direction: row-reverse;
+    transition: transform 1s;
+}
+
+:host > div > [plane] > [item] {
+    justify-content: center;
+    background-image: url('/assets/images/overlay.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+:host > div > [plane] > [item] > img {
+    position: absolute;
+    z-index: -1;
+    align-self: center;
+    width: inherit;
+    /* TODO: opacity is component specific */
+    opacity: .3;
+}
+
+:host > div > [plane] > [item] > div {
+    align-self: center;
+    flex-direction: column;
+    /* TODO: widths, heights are component specific */
+    width: 500px;
+    height: 360px;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+/* TODO END */
+
+:host > div > [plane] > [item] > [cover]:hover img.cover {
+    transform: translateX(-30px);
+    -webkit-filter: saturate(1);
+}
+
+:host > div > [plane] > [item] > [cover]:hover img.disc {
+    opacity: 1;
+    margin-left: 50px;
+    transform: rotateZ(15deg) scale(0.95);
+}
+
+:host > div > [plane] > [item] > [cover] img {
+    transition: all 0.75s;
+}
+
+:host > div > [plane] > [item] > [cover] img.cover {
+    height: 360px;
+    width: 360px;
+    border: 1px solid rgba(255, 255, 255, .05);
+    -webkit-filter: saturate(0.75);
+    z-index: 1;
+}
+
+:host > div > [plane] > [item] > [cover] img.disc {
+    position: absolute;
+    margin-left: 25px;
+    -webkit-filter: brightness(0.75);
+    transform: rotateZ(2.5deg) scale(0.95);
+}
+
+:host > div > [plane] > [item] > [description] > [cta] {
+    justify-content: flex-end;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button] {
+    min-width: 100px;
+    border: 2px solid white;
+    margin-left: 15px;
+    padding: 10px 15px;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button] > span {
+    position: absolute;
+    transition: opacity 0.5s;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button]:hover > span {
+    opacity: 0;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button] > [providers] {
+    opacity: 0;
+    transition: opacity 0.5s, width 0.5s;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button] > [providers] > span {
+    position: absolute;
+    margin: 0 5px;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button] > [providers] > a {
+    margin: 0 7px;
+}
+
+:host > div > [plane] > [item] > [description] > [cta] > [button]:hover > [providers] {
+    opacity: 1;
+    display: flex;
+}
+
+:host > div > [plane] > [index] > img {
+    width: 50vw;
+    align-self: center;
+}
+
+:host > div > [plane] > [index] > div {
+    width: 750px;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+:host > div > [plane] > [index] > div > a {
+    font-family: 'bebas';
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0;
+    transition: font-size 0.5s, line-height 0.5s, color 0.5s;
+}
+
+:host > div > [plane] > [index] > div > a.filtered {
+    font-size: 16px;
+    line-height: 24px;
+    color: #423F63;
+    cursor: default;
+    pointer-events: none;
+}
+
+:host > div > [plane] > [index] > div > a > span {
+    padding: 0 10px;
+}
+
+:host > div > [plane] > [index] > div > a > span:first-child {
+    text-align: right;
+    min-width: 75px;
+}

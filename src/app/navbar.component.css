@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+:host:before {
+    content: "";
+    border: 1px solid #161521;
+    margin: 39px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+:host nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+:host nav a:first-child {
+    width: 200px;
+    height: 72px;
+    float: left;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-image: url(/assets/images/dreamgrave.svg);
+    background-position: 0 10px;
+    font-size: 0;
+}
+
+:host nav a img {
+    position: relative;
+    float: left;
+    margin: 15px 30px 15px 0;
+}

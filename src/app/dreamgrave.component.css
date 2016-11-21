@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    font-family: 'azoft';
+    color: #4f4f53;
+    color: #56555c;
+    font-size: 13px;
+    width: 100%;
+    background-color: #161521;
+    text-align: justify;
+}
+
+:host footer, :host header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    user-select: none;
+}
+
+:host header {
+    background-color: #161521;
+}
+
+:host footer {
+    background-color: #0b0b11;
+}
+
+:host router-outlet {
+    display: none;
+}

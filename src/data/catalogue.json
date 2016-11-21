@@ -1,0 +1,108 @@
+[
+    {
+        "catalogueNo": "DG00",
+        "type": 0,
+        "name": "Presentiment LP",
+        "short": "Presentiment LP",
+        "long": "Wrapped in an abstract, distress-filled fantasy Presentiment presents our impressions about our world, our society, ourselves - the reason we are here and ultimately the ending we are headed.",
+        "releaseDate": "2014-10-14T22:00:00.000Z",
+        "callToAction": {
+            "listen": [
+                {
+                    "label": "Bandcamp",
+                    "url": "https://dreamgrave.bandcamp.com/album/presentiment"
+                },
+                {
+                    "label": "Spotify",
+                    "url": "https://play.spotify.com/album/4VcpLIOOr7TPhvkAfYaUdD"
+                },
+                {
+                    "label": "YouTube",
+                    "url": "https://www.youtube.com/watch?v=5QDjJdBCBEE&list=PLj3zwqiUeQIalzk260l2168zrmj500zi1"
+                }
+            ],
+            "buy": [
+                {
+                    "label": "Bandcamp",
+                    "url": "https://dreamgrave.bandcamp.com/album/presentiment"
+                }
+            ]
+        }
+    },
+    {
+        "catalogueNo": "DG01",
+        "type": 1,
+        "name": "Presentiment CD Digipack",
+        "short": "Presentiment Digipack",
+        "long": "Professional quality digipack, with 20 page booklet features unique artwork created by Tóbiás Zoltán Art, lyrics and story for each song guiding you through the highs and lows of Presentiment.",
+        "releaseDate": "2015-03-15T23:00:00.000Z",
+        "callToAction": {
+            "listen": [
+                {
+                    "label": "Bandcamp",
+                    "url": "https://dreamgrave.bandcamp.com/album/presentiment"
+                },
+                {
+                    "label": "Spotify",
+                    "url": "https://play.spotify.com/album/4VcpLIOOr7TPhvkAfYaUdD"
+                },
+                {
+                    "label": "YouTube",
+                    "url": "https://www.youtube.com/watch?v=5QDjJdBCBEE&list=PLj3zwqiUeQIalzk260l2168zrmj500zi1"
+                }
+            ],
+            "buy": [
+                {
+                    "label": "Bandcamp",
+                    "url": "https://dreamgrave.bandcamp.com/album/presentiment"
+                }
+            ]
+        }
+    },
+    {
+        "catalogueNo": "DG02",
+        "type": 2,
+        "name": "False Sense of Confidence Video",
+        "short": "False Sense Video",
+        "long": "Official video for a special Violin Edit of False Sense of Confidence from our the album Presentiment.",
+        "releaseDate": "2016-03-12T23:00:00.000Z",
+        "callToAction": {
+            "watch": [
+                {
+                    "label": "YouTube",
+                    "url": "https://www.youtube.com/watch?v=Nki9_YRS6Ac"
+                }
+            ]
+        }
+    },
+    {
+        "catalogueNo": "DG03",
+        "type": 2,
+        "name": "Drop The Curtain Video",
+        "short": "Drop The Curtain Video",
+        "long": "Official video for first single of the next album. Coming in 2017Q1",
+        "callToAction": {
+            "subscribe": [
+                {
+                    "label": "YouTube",
+                    "url": "http://www.youtube.com/user/dreamgraveofficial?sub_confirmation=1"
+                }
+            ]
+        }
+    },
+    {
+        "catalogueNo": "DG04",
+        "type": 0,
+        "name": "Final Stage of Systematical Turbulence EP",
+        "short": "Final Stage of Systematical Turbulence EP",
+        "long": "New album, coming in 2017Q2",
+        "callToAction": {
+            "subscribe": [
+                {
+                    "label": "newsletter",
+                    "url": "https://www.facebook.com/dreamgrave/app/100265896690345/"
+                }
+            ]
+        }
+    }
+]

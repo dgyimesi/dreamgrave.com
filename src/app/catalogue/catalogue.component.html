@@ -1,0 +1,47 @@
+<div>
+	<div selector>
+		<a routerLink="../index" [class.active]="selectedItemIndex === -1">index</a>
+		<a *ngFor="let item of catalogue; let index = index" routerLink="../{{ item.catalogueNo | lowercase }}-{{ item.name | urlize }}" 
+			[class.active]="index === selectedItemIndex" [class.filtered]="typeFilter !== null && item.type !== typeFilter">
+			<span id>{{ item.catalogueNo }}</span>
+			<span name>: {{ item.short }}</span>
+		</a>
+	</div>
+	<div #plane plane>
+		<div index item>
+			<img src="/assets/images/index-background.png">
+			<div list>
+				<a *ngFor="let item of catalogue; let index = index" routerLink="../{{ item.catalogueNo | lowercase }}-{{ item.name | urlize }}" 
+					[class.active]="index === selectedItemIndex" [class.filtered]="typeFilter !== null && item.type !== typeFilter">
+					<span>{{ item.catalogueNo }}</span>
+					<span>
+						{{ item.name }} 
+						<template [ngIf]="item.releaseDate">[{{ item.releaseDate | date:"yyyy" }}]</template>
+						<template [ngIf]="!item.releaseDate">[TBA]</template>
+					</span>
+				</a>
+			</div>
+		</div>
+		<div item *ngFor="let item of catalogue; let index = index">
+			<img src="/assets/images/{{ item.catalogueNo | lowercase }}-background.jpg">
+			<div cover>
+				<img src="/assets/images/{{ item.catalogueNo | lowercase }}-cover.jpg" alt="{{ item.name }}" class="cover">
+				<img *ngIf="item.type === itemType.CD" src="/assets/images/{{ item.catalogueNo | lowercase }}-disc.png" class="disc">
+			</div>
+			<div description>
+				<h1>{{ item.short }} </h1>
+				<p>{{ item.long }}</p>
+				<div cta>
+					<div button *ngFor="let action of item.callToAction | keys">
+						<span>{{ action }}</span>
+						<div providers>
+							<a [class.active]="item.callToAction[action].length === 1" *ngFor="let target of item.callToAction[action]" href="{{ target.url }}" target="_blank">
+								<img src="./assets/images/{{ target.label | lowercase }}.svg" title="on {{ target.label }}">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>

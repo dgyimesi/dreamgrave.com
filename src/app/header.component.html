@@ -1,0 +1,13 @@
+<div route>{{ page }}</div>
+<div options [class.show]="optionsVisible">
+	<a *ngFor="let option of options; let index = index" [class.active]="index === selected" (click)="selectOption(index)" routerLink="/{{ page }}/{{ option }}">{{ option }}</a>
+</div>
+<div social>
+	<a href="https://www.facebook.com/dreamgrave/" target="_blank"><img src="./assets/images/facebook.svg"></a>
+	<a href="https://www.youtube.com/user/dreamgraveofficial" target="_blank"><img src="./assets/images/youtube.svg"></a>
+	<a href="https://instagram.com/dreamgraveofficial/" target="_blank"><img src="./assets/images/instagram.svg"></a>
+	<a href="https://play.spotify.com/artist/3n1JRu9UcG56snZ5v441yA" target="_blank"><img src="./assets/images/spotify.svg"></a>
+	<a href="https://dreamgrave.bandcamp.com" target="_blank"><img src="./assets/images/bandcamp.svg"></a>
+	<!--<a href="#" target="_blank"><img src="./assets/images/apple.svg"></a>-->
+	<!--<a href="#" target="_blank"><img src="./assets/images/twitter.svg"></a>-->
+</div>

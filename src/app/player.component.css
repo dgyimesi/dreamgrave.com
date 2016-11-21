@@ -1,0 +1,28 @@
+:host {
+    align-items: center;
+    position: relative;
+    font-size: 11px;
+    line-height: 15px;
+    display: flex;
+    padding: 0 50px;
+}
+
+:host > div {
+    display: flex;
+    align-items: flex-end;
+}
+
+:host > div.info {
+    flex-direction: column;
+}
+
+:host > div.control {
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 25px;
+    cursor: pointer;
+}
+
+:host > div.control.play {
+    background-image: url(/assets/images/play.png);
+}

@@ -1,0 +1,91 @@
+:host {
+    width: 100%;
+    justify-content: flex-start !important;
+}
+
+:host > div {
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* TODO: planes are common translater elements, refactor other page components to use it */
+:host > div > [plane] {
+    transition: transform 1s;
+}
+
+:host > div > [plane] > [item] {
+    justify-content: center;
+    background-image: url('/assets/images/overlay.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+:host > div > [plane] > [item] > img {
+    position: absolute;
+    z-index: -1;
+    align-self: center;
+    width: inherit;
+}
+
+:host > div > [plane] > [item] > div {
+    align-self: center;
+    flex-direction: column;
+    width: 500px;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+/* TODO END */
+
+:host > div > [plane] > [home] {
+    justify-content: flex-start;
+}
+
+:host > div > [plane] > [home] > div {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 500px;
+    margin: 30px 0;
+    padding: 0 50px;
+}
+
+:host > div > [plane] > [biography] {
+    flex-direction: column;
+}
+
+:host > div > [plane] > [biography] > div {
+    width: 960px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:host > div > [plane] > [biography] > div:last-child {
+    flex-direction: row;
+}
+
+:host > div > [plane] > [biography] > div > h1 {
+    align-self: flex-start;
+}
+
+:host > div > [plane] > [biography] > div > [button] {
+    min-width: 125px;
+    border: 2px solid white;
+    margin: 15px 0 0 25px;
+    padding: 10px 15px;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+:host > div > [plane] > [biography] > div > [button] > a {
+    opacity: 1;
+    margin: 0;
+}
+
+:host > div > div:last-child img.logo {
+    height: 60px;
+}

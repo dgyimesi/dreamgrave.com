@@ -5,6 +5,7 @@ import { UniversalModule, isBrowser, isNode } from 'angular2-universal/browser';
 import { TestModule } from './test/test.module';
 import { AboutModule } from './about/about.module';
 import { CatalogueModule } from './catalogue/catalogue.module';
+import { PressModule } from './press/press.module';
 
 import { DreamgraveComponent } from './dreamgrave.component';
 import { DreamgraveRoutingModule } from './dreamgrave-routing.module';
@@ -27,6 +28,7 @@ import { Cache } from './universal-cache';
         TestModule,
         AboutModule,
         CatalogueModule,
+        PressModule,
 
         DreamgraveRoutingModule
     ],

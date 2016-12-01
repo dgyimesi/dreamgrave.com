@@ -13,6 +13,6 @@ export class DreamgraveComponent {
         this.router.events.subscribe((event: NavigationEnd) => {
             // TODO: show sub page names also in header.
             this.page = (event.urlAfterRedirects || event.url).split('/')[1];
-        })
+        });
     }
 }

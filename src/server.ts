@@ -59,10 +59,11 @@ app.get('/about', ngApp);
 app.get('/about/*', ngApp);
 app.get('/catalogue', ngApp);
 app.get('/catalogue/*', ngApp);
+app.get('/press', ngApp);
+app.get('/press/*', ngApp);
 app.get('/test', ngApp);
 app.get('/test/*', ngApp);
 app.get('/wip', ngApp);
-
 
 app.get('*', function(req, res) {
   res.setHeader('Content-Type', 'application/json');

@@ -27,51 +27,27 @@
     position: absolute;
     z-index: -1;
     align-self: center;
-    width: inherit;
+    height: inherit;
+    /* TODO: opacity is component specific */
+    opacity: .3;
 }
 
 :host > div > [plane] > [item] > div {
     align-self: center;
     flex-direction: column;
     width: 500px;
-    justify-content: space-between;
+    height: 360px;
+    justify-content: flex-start;
     padding: 0 50px;
 }
 /* TODO END */
 
-:host > div > [plane] > [home] {
-    justify-content: flex-start;
-}
-
-:host > div > [plane] > [home] > div {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-self: flex-end;
-    width: 500px;
-    margin: 30px 0;
-    padding: 0 50px;
-}
-
-:host > div > [plane] > [biography] {
-    flex-direction: column;
-}
-
-:host > div > [plane] > [biography] > div {
-    width: 960px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-:host > div > [plane] > [biography] > div:last-child {
+:host > div > [plane] > [item] > div > div {
     flex-direction: row;
+    justify-content: flex-end;
 }
 
-:host > div > [plane] > [biography] > div > h1 {
-    align-self: flex-start;
-}
-
-:host > div > [plane] > [biography] > div > [button] {
+:host > div > [plane] > [item] [button] {
     min-width: 125px;
     border: 2px solid white;
     margin: 15px 0 0 25px;
@@ -81,15 +57,23 @@
     cursor: pointer;
 }
 
-:host > div > [plane] > [biography] > div > [button] > a {
+:host > div > [plane] > [item] [button] > a {
     opacity: 1;
     margin: 0;
 }
 
-:host > div > [plane] > [biography] > img {
-    opacity: .25;
+:host > div > [plane] > [item] [button] > a > img {
+    padding-right: 10px;
 }
 
-:host > div > div:last-child img.logo {
-    height: 60px;
+:host > div > [plane] > [item] p > a {
+    opacity: .666;
+}
+
+:host > div > [plane] > [item] p > a:hover {
+    opacity: 1;
+}
+
+:host > div > [plane] > [item] p > a > img {
+    padding-right: 10px;
 }

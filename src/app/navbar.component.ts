@@ -9,6 +9,6 @@ export class NavbarComponent {
     @Input() page: string;
 
     private routes: string[] = [
-        'about', 'catalogue' //, 'media', 'live', 'store', 'press', 'contact'
+        'about', 'catalogue', 'press'//, 'media', 'live', 'store', 'press', 'contact'
     ]
 }

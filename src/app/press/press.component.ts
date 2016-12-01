@@ -7,9 +7,9 @@ import { FilterService } from '../filter.service';
 // TODO: swap background images (fixed set?)
 // TODO: add 10s scaling effect (1.1?)
 @Component({
-    selector: 'about',
-    templateUrl: './about.component.html',
-    styleUrls: ['about.component.css'],
+    selector: 'press',
+    templateUrl: './press.component.html',
+    styleUrls: ['press.component.css'],
     host: {
         '[@routeAnimation]': 'true',
         page: ''
@@ -30,23 +30,12 @@ import { FilterService } from '../filter.service';
         ])
     ]
 })
-export class AboutComponent {
+export class PressComponent {
     private selectedItemIndex: number = 0;
 
     constructor(private filterService: FilterService, private route: ActivatedRoute) {
-        let options = ['intro', 'biography', 'members'];
+        let options = [];
 
         this.filterService.registerOptions(options);
-        this.filterService.onOptionSelected.subscribe(index => this.selectedItemIndex = index);
-        this.filterService.selectOption(0);
-
-        this.route.params.subscribe((params: any) => {
-            if (params.target) {
-                let index = options.indexOf(params.target);
-
-                this.selectedItemIndex = index;
-                this.filterService.selectOption(index);
-            }
-        });
     }
 }
